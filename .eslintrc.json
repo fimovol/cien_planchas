@@ -1,3 +1,25 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "indent": ["error", 2],
+    "no-empty": ["error", { "allowEmptyCatch": true }],
+    "quote-props": ["error", "as-needed"],
+    "key-spacing": [
+      2,
+      {
+        "beforeColon": true,
+        "afterColon": false
+      }
+    ],
+    "comma-dangle": ["error", "never"],
+    "spaced-comment": ["error", "always"],
+    "block-spacing": "error",
+    "no-multi-spaces": "error",
+    "no-trailing-spaces": ["error",{ "skipBlankLines": false }],
+    "space-before-function-paren": ["error", "always"],
+    "no-whitespace-before-property": "error"
+  }
 }
